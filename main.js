@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+let storyText = '気温華氏50度で外は暑かった。  :insertx: 散歩に出かけた。  :inserty: に着いた。 彼らは恐怖を感じ始めた。 :insertz:. 田中 は全てを見ていたが驚かなかった。 — :insertx: weighs 300 pounds, and it was a hot day.';
 let insertX = ['吉沢亮','横浜流星','佐々木蔵之介'];
 let insertY = ['牛角','スペースワールド','首相官邸'];
 let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
@@ -28,7 +28,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob',name);
+    newStory = newStory.replace('田中',name);
   }
 
   if(document.getElementById("uk").checked) {
